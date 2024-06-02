@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import GlobalStyle from "./GlobalStyle";
 import Dashboard from "./pages/Dashboard";
 import Account from "./pages/Account";
@@ -10,10 +9,8 @@ import PageNotFound from "./pages/PageNotFound";
 import Users from "./pages/Users";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import AppLayout from "./ui/AppLayout";
-import data from "./utils/supabase";
 
 function App() {
-  data();
   return (
     <>
       <GlobalStyle />

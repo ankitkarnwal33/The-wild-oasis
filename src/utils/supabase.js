@@ -1,4 +1,4 @@
-import supabase from "@supabase/supabase-js"
+import supabase from "../services/supabase"
 async function data() {
     try {
         let { data: cabins, error } = await supabase.from('cabins').select('*');

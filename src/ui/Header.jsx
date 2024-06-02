@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import Logo from "../../public/Logo";
-import MainNav from "./MainNav";
-
 const StyledHeader = styled.header`
   background-color: var(--color-grey-0);
   padding: 1.2rem 4rem;
