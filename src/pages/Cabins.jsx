@@ -7,7 +7,7 @@ import CabinTable from "../features/cabins/CabinTable";
 function Cabins() {
   useEffect(() => {
     getCabins()
-      .then((data) => console.log(data))
+      .then()
       .catch((err) => console.log(err));
     return () => {};
   }, []);

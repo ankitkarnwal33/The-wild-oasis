@@ -13,4 +13,13 @@ async function getCabins() {
 }
 
 
+export async function deleteCabin(id) {
+    console.log(id);
+    const { error } = await supabase.from('cabins').delete().eq('id', id);
+    if (error) {
+        console.log(error);
+        throw new Error('Some error occured while deleting the cabin.');
+    }
+}
+
 export default getCabins;
